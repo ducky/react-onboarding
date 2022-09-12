@@ -14,7 +14,7 @@ The base app here uses [Tabler](https://preview.tabler.io/docs/) as a design lib
 
 ## First Milestone - Displaying a list of Games
 
-For the first task, the goal is pretty simple. Given a list of items (Video Game in our case), display these items to the user. When clicking an game, it should expand, show a modal, or something similar to let you view more information about the game.
+For the first task, the goal is pretty simple. Given a list of items (Video Game in our case), display these items to the user. When clicking on a game (or details button), it should expand, show a modal, or something similar to let you view more information about the game.
 
 ### Expected Result
 
@@ -46,11 +46,11 @@ Once you have the router configured, this task will require you to send the user
 
 ## Final Milestone - Filtering/Sorting Results
 
-This task will help you to make your results more user friendly by adding a way to filter down and sort the games. This can all be done with the array of data after the information has come back from the API.
+This task will help you to make your results more user friendly by adding a way to filter down and sort the games. This can all be done locally with the array of data after the information has come back from the API, but this API also supports some advanced filtering, so you can be as creative as you want.
 
 ### Expected Result
 
-1. When viewing the list of Video Games, add a text input that can be used to filter results down (Hint: use `.filter` and `.includes`).
+1. When viewing the list of Video Games, add a text input that can be used to filter results down (Hint: use `.filter` and `.includes` if doing locally).
 1. Add a select box with some options for sorting. Can be whatever you want, but try to at least do `Alphabetical - Ascending/Descending`.
 
 ## Fin
