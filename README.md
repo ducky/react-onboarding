@@ -1,36 +1,62 @@
 # Moser Consulting - Intern Onboarding
 
-Hello! This tiny app was created to help new hires or interns have a basic starting point for their first react app with some helpful checkpoints they can show off and receive feedback or assistance.
+Hello! This tiny app was created to help you as a new hire or intern have a basic starting point for your first react app with some helpful checkpoints you can show off and receive feedback or assistance.
 
-Listed below are the different milestones and what you can expect to have to show after each one.
+This example is using a public API called [CheapShark](https://apidocs.cheapshark.com/) which is a site that tracks video game deals. It has some really helpful base endpoints as well as ones where you can be creative.
 
-## Background Info
+Listed below are the different milestones with tasks and what you can expect to have completed after each one. Please go through the "First Steps" initially so that you're ready.
 
-Any changes you make will usually be in the [components](./src/components/) folder and is structured like a standard React app.
+This is a very loose project, so be as creative and fun as you want. Try something you maybe wouldn't have before, but also make sure you have the end result you expect first. :)
 
-If you take a look in the [data](./src/data/) folder, you'll see a games.json file, and this is going to be used as your initial source of data until you get to a later step, where you'll be pulling this information from a remote api.
+## First Steps - DO THESE FIRST IN ORDER
 
-The base app here uses [Tabler](https://preview.tabler.io/docs/) as a design library, which is built on top of [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/). Feel free to keep these libraries or roll your own CSS if you want.
+- [Helpful Concepts](./docs/1.helpful-reads.md) - Gives you a very basic refresher on JS/React or teaches you some new concepts to look into more.
+- [Initial Setup](./docs/2.setup.md) - Makes sure your dev setup is ready.
+- [Project Intro](./docs/3.intro.md) - Details the folder structure.
 
-## First Milestone - Displaying a list of Games
+## Table of Contents
 
-For the first task, the goal is pretty simple. Given a list of items (Video Game in our case), display these items to the user. When clicking on a game (or details button), it should expand, show a modal, or something similar to let you view more information about the game.
+- [First Milestone - Display/View Games](#first-milestone---displaying-a-list-of-games)
+- [Second Milestone - Fetch from API](#second-milestone---fetching-items-from-an-api)
+- [Third Milestone - Add React Router](#third-milestone---using-react-router)
+- [Fourth Milestone - Add Filtering/Searching](#final-milestone---filteringsorting-results)
 
-### Expected Result
+## Referenced Libraries
 
-1. Viewing the site shows a list of Video Games and a small summary about them.
-1. Clicking on a single Video Game should give us more details about it in some form (expanded, modal, etc).
+- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+- [Cheapshark API](https://apidocs.cheapshark.com/)
+- [React](https://reactjs.org/docs)
+- [React Router](https://reactrouter.com/en/main/getting-started/overview)
+- [Tabler](https://preview.tabler.io/docs/)
+- [Vite](https://vitejs.dev/guide/)
 
-## Second Milestone - Fetching Items from an API
+## Start Coding
+
+### Reminder - How to Start the App
+
+```bash
+npm run dev
+```
+
+### First Milestone - Displaying a list of Games
+
+For the first task, the goal is pretty simple. Given a list of [games](./src/data/games.json), display the list of them to the user. When clicking on a game (or details button), it should expand, show a modal, or something similar to let you view more information about the game.
+
+#### First Milestone - Expected Result
+
+1. Viewing the site shows a list of video games and a small summary about them.
+1. Clicking on a single video game should give us more details about it in some form (expanded, modal, etc).
+
+### Second Milestone - Fetching Items from an API
 
 This task will introduce you to retrieving information from a remote API and then displaying the results to the page. You'll probably need to display a loader or something similar while waiting for the information to arrive. You should be able to reuse the rest of your logic, since the array results should look the same as the original json you used.
 
 The API route you'll want to use is `https://www.cheapshark.com/api/1.0/deals?upperPrice=15`, which uses the cheapshark public API. If you'd like to dig into it more or reference ways to filter results down (hint: further milestones might use this), here is the docs for the API: [Cheapshark API](https://apidocs.cheapshark.com/).
 
-### Expected Result
+### Second Milestone - Expected Result
 
-1. Viewing the site shows a list of Video Games and a small summary about them, loaded from a remote server.
-1. Clicking on a single Video Game should give us more details about it in some form (expanded, modal, etc).
+1. Viewing the site shows a list of video games and a small summary about them, loaded from a remote server.
+1. Clicking on a single video game should give us more details about it in some form (expanded, modal, etc).
 
 ## Third Milestone - Using React Router
 
@@ -38,19 +64,19 @@ This task will introduce you to the basics of [React Router](https://reactrouter
 
 Once you have the router configured, this task will require you to send the user to a separate page when viewing a single result.
 
-### Expected Result
+### Third Milestone - Expected Result
 
-1. Viewing the site shows a list of Video Games at either `/` or `/games`
-1. Clicking on a single Video Game should send us to a new page with details about that item `/games/:id`
+1. Viewing the site shows a list of video games at either `/` or `/games`
+1. Clicking on a single video game should send us to a new page with details about that item `/games/:id`
 1. BONUS - Try loading more detailed information from the API for that specific item.
 
 ## Final Milestone - Filtering/Sorting Results
 
 This task will help you to make your results more user friendly by adding a way to filter down and sort the games. This can all be done locally with the array of data after the information has come back from the API, but this API also supports some advanced filtering, so you can be as creative as you want.
 
-### Expected Result
+### Fourth Milestone - Expected Result
 
-1. When viewing the list of Video Games, add a text input that can be used to filter results down (Hint: use `.filter` and `.includes` if doing locally).
+1. When viewing the list of video games, add a text input that can be used to filter results down (Hint: use `.filter` and `.includes` if doing locally).
 1. Add a select box with some options for sorting. Can be whatever you want, but try to at least do `Alphabetical - Ascending/Descending`.
 
 ## Fin
