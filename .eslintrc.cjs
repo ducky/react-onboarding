@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['@moser-inc/eslint-config', '@moser-inc/eslint-config-react'],
+  extends: ['@moser-inc/eslint-config-react'],
   root: true,
 };

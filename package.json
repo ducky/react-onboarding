@@ -13,8 +13,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@moser-inc/eslint-config": "^1.3.2",
-    "@moser-inc/eslint-config-react": "^1.2.1",
+    "@moser-inc/eslint-config-react": "^1.2.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
