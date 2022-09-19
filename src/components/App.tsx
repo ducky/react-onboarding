@@ -14,18 +14,18 @@ const App = () => {
     if (!confirmed) {
       return (
         <form onSubmit={() => setConfirmed(true)} style={{ width: '30vw' }}>
-          <div className="mb-3">
+          <div className='mb-3'>
             <input
-              type="text"
-              className="form-control form-control-lg text-center"
-              id="name"
-              placeholder="Enter Your Name"
+              type='text'
+              className='form-control form-control-lg text-center'
+              id='name'
+              placeholder='Enter Your Name'
               onChange={(e) => setName(e.target.value)}
               value={name}
               autoFocus
             />
           </div>
-          <button className="btn btn-primary btn-lg mt-2" type="submit">
+          <button className='btn btn-primary btn-lg mt-2' type='submit'>
             Thats Me!
           </button>
         </form>
@@ -43,11 +43,7 @@ const App = () => {
     );
   };
 
-  return (
-    <div className="d-flex justify-content-center pt-5 text-center">
-      {renderContent()}
-    </div>
-  );
+  return <div className='d-flex justify-content-center pt-5 text-center'>{renderContent()}</div>;
 };
 
 export { App };
