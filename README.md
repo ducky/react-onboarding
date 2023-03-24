@@ -1,4 +1,4 @@
-# Moser Consulting - Intern Onboarding
+# Basic Onboarding React App for Friendos
 
 Hello! This tiny app was created to help you as a new hire or intern have a basic starting point for your first react app with some helpful checkpoints you can show off and receive feedback or assistance.
 
